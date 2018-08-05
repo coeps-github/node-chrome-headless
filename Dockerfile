@@ -6,10 +6,6 @@ RUN apt-get update && apt-get install -y \
     curl \
     gnupg \
     git \
-    python-pip \
-    python2.7 \
-    python2.7-dev \
-    groff-base \
     build-essential \
     --no-install-recommends
 
