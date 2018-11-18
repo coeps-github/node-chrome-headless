@@ -10,12 +10,13 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     --no-install-recommends
 
-RUN curl -sSL https://dl.google.com/linux/linux_signing_key.pub | apt-key add - \
-    && echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
+RUN curl -sSL https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+RUN echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main"
+RUN echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
 
 # https://www.ubuntuupdates.org/ppa/google_chrome?dist=stable
 RUN apt-get update && apt-get install -y \
-    google-chrome-stable=68.0.3440.84-1 \
+    google-chrome-stable=70.0.3538.77-1 \
     --no-install-recommends
 
 # https://deb.nodesource.com/node_11.x/pool/main/n/nodejs/
