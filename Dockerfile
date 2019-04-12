@@ -19,6 +19,6 @@ RUN apt-get update && apt-get install -y \
     --no-install-recommends
 
 # https://deb.nodesource.com/node_11.x/pool/main/n/nodejs/
-RUN curl https://deb.nodesource.com/node_11.x/pool/main/n/nodejs/nodejs_11.2.0-1nodesource1_amd64.deb > node.deb \
+RUN curl https://deb.nodesource.com/node_11.x/pool/main/n/nodejs/nodejs_11.9.0-1nodesource1_amd64.deb > node.deb \
  && dpkg -i node.deb \
  && rm node.deb
