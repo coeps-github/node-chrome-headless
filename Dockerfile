@@ -6,7 +6,9 @@ RUN apt-get update && apt-get install -y \
     curl \
     gnupg \
     git \
-    python-minimal \
+    python-pip \
+    python2.7 \
+    python2.7-dev \
     build-essential \
     --no-install-recommends
 
